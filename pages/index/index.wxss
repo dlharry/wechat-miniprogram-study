@@ -1,1 +1,58 @@
 /* pages/index/index.wxss */
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20rpx;
+    background-color: burlywood;
+}
+
+.menu .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu .item image{
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50rpx;
+    background-color: coral;
+}
+
+.posts{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: darkgray;
+    padding: 20rpx;
+    justify-content: flex-start;
+}
+
+.posts .card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 5rpx;
+    border-radius: 10%;
+}
+
+.posts .card .title{
+    background-color: violet;
+}
+
+.posts .card .numbers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.posts .card .numbers .item{
+    display: flex;
+    flex-direction: column;
+}
+
+.posts .card .numbers .item image{
+    height: 50rpx;
+    width: 50rpx;
+}
