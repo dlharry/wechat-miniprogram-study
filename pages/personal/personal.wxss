@@ -1,1 +1,38 @@
 /* pages/personal/personal.wxss */
+.userdetailcontainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.userdetailcontainer .background{
+    width: 100%;
+    height: 488rpx;
+}
+
+.userdetailcontainer .userdetailbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.userdetailcontainer .userdetailbar .avatar{
+    display: block;
+    width: 56px;
+    height: 56px;
+}
+
+.avatar-wrapper {
+    padding: 0;
+    width: 56px !important;
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+.userdetailcontainer .userdetailbar .namecontainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20rpx;
+}

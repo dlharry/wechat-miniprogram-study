@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/recommend/recommend",
     "pages/personal/personal",
-    "pages/carddetail/carddetail"
+    "pages/carddetail/carddetail",
+    "pages/avatar/avatar"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffdab9",

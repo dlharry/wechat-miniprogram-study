@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="avatar-container">
+    <view class="avatar-title">选择头像</view>
+    <view class="avatar-wrapper">
+      <image 
+        class="avatar" 
+        src="{{avatarUrl || '/images/default-avatar.png'}}" 
+        mode="aspectFill"
+      ></image>
+    </view>
+    <button class="choose-btn" bindtap="chooseAvatar">
+      选择头像
+    </button>
+    <button class="upload-btn" bindtap="uploadAvatar">
+      上传头像
+    </button>
+  </view>
+</view>

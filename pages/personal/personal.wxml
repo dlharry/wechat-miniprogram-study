@@ -1,2 +1,14 @@
 <!--pages/personal/personal.wxml-->
-<text>pages/personal/personal.wxml</text>
+<view class = "userdetailcontainer">
+    <image class="background" src="/static/images/OIP.jpg"/>
+    <view class="userdetailbar">
+        <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+            <image class="avatar" src="{{avatarUrl}}"></image>
+        </button> 
+        <form class="namecontainer">
+            <view title="昵称">
+                <input type="nickname" class="weui-input" placeholder="请输入昵称"/>
+            </view>
+        </form>
+    </view>
+</view>

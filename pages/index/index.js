@@ -66,7 +66,7 @@ Page({
 
   onClick:function() {
     wx.navigateTo({
-      url: '/pages/carddetail/carddetail',
+      url: '/pages/carddetail/carddetail?id='+'123',
     })
   }
 })

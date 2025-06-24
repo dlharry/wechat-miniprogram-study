@@ -1,18 +1,22 @@
 // pages/personal/personal.js
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    userInfo:{
+        avatar:"",
+        nickname:""
+    }
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    
   },
 
   /**
@@ -62,5 +66,26 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+
+  getUserProfile: function(e) {
+      console.log("准备获取用户名")
+      wx.getUserProfile({
+        desc: '用于显示',
+      }).then(res=>{
+        console.log(res)
+        this.setData({
+            nickname : res.userInfo.nickName
+        })
+      }).catch(err=>{
+          console.log('fail',err)
+      })
+  },
+
+  onChooseAvatar(e) {
+    const { avatarUrl } = e.detail 
+    this.setData({
+      avatarUrl,
+    })
   }
 })
