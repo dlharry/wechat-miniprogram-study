@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/recommend/recommend",
-    "pages/personal/personal"
+    "pages/personal/personal",
+    "pages/carddetail/carddetail"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffdab9",

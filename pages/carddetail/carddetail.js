@@ -1,4 +1,4 @@
-// pages/index/index.js
+// pages/carddetail/carddetail.js
 Page({
 
   /**
@@ -62,11 +62,5 @@ Page({
    */
   onShareAppMessage() {
 
-  },
-
-  onClick:function() {
-    wx.navigateTo({
-      url: '/pages/carddetail/carddetail',
-    })
   }
 })
